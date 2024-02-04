@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .heading{
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      font-family: 'Pixelify Sans', sans-serif;
+    }    
+
+    .grid{
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container{
+      height: 746px;
+      width: 748px;
+      display: grid;
+      background-color: black;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+    }
+    .item {
+      background-color: #F0F1EC;
+    }
+
+    .red{
+      background-color: #E72F24;
+    }
+    .white-1{
+      grid-column: span 3;
+    }
+    .white-2{
+      grid-row: span 2;
+    }
+    .white-3{
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    .blue{
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+    .white-4{
+      grid-area: -2/1/-1/2;
+    }
+    .yellow{
+      background-color: #F9D01E;
+      grid-column: 2/3;
+    }
+    .black{
+      background-color: #232629;
+    }
+    .white-5{
+      grid-row: 3/-1;
+      grid-column: -2/-1;
+    }
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading"><h1> Mondrain Composition</h1></div>
+  <div class="grid">
+    <div class="container">
+      <div class="item red"></div>
+      <div class="item white-1"></div>
+      <div class="item white-2"></div>
+      <div class="item white-3"></div>
+      <div class="item blue"></div>
+      <div class="item white-4"></div>
+      <div class="item yellow"></div>
+      <div class="item black"></div>
+      <div class="item white-5"></div>
+    </div>
+  </div>
+</body>
+
+</html>
